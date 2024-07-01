@@ -24,3 +24,5 @@ tiktoken
 chromadb 
 tavily-python 
 nomic[local]
+graphviz
+psycopg2
