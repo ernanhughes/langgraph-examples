@@ -26,3 +26,5 @@ tavily-python
 nomic[local]
 graphviz
 psycopg2
+unstructured
+umap-learn
