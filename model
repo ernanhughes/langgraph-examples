@@ -1,0 +1,36 @@
+digraph {
+	node [shape=Mrecord]
+	Customer_node [label="{ Entity: Customer
+(sch:Person) |First Name
+(sch:givenName) |Last Name
+(sch:familyName) |Email
+(sch:email) |Segment
+(sch:audience) |Country
+(sch:addressCountry) |City
+(sch:addressLocality) |State
+(sch:addressRegion) |Street
+(sch:streetAddress) |Zipcode
+(sch:postalCode) }"]
+	Order_node [label="{ Entity: Order
+(sch:Order) |Order Id
+(sch:orderNumber) |Sales per Customer
+(sch:PriceSpecification) |Order Status
+(sch:OrderStatus) |Order Date
+(sch:orderDate) |Shipping Date
+(sch:Order) |Shipping Mode
+(sch:ParcelDelivery) |Delivery Status
+(sch:OrderStatus) |Days for shipping
+(sch:Order) |Days for shipment
+(sch:Order) |Order Profit Per Order
+(sch:PriceSpecification) }"]
+	Product_node [label="{ Entity: Product
+(sch:Product) |Category Name
+(sch:category) |Product Name
+(sch:name) |Product Price
+(sch:price) |Product Status
+(sch:itemCondition) }"]
+	Order_node -> Customer_node [label="placed by
+(sch:customer) " len=6.00]
+	Order_node -> Product_node [label="contains
+(sch:itemListElement) " len=6.00]
+}
